@@ -1,0 +1,174 @@
+body {
+    background-color: #efe8d5;
+}
+
+header {
+    z-index: 1;
+}
+
+
+a {
+    text-decoration: none;
+    color: #21a782;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Menu Header*/
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.logo{
+    flex: 0 0 auto;
+}
+
+.logoinicio {
+    width: 7rem;
+}
+
+.menu__principal {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #21a782;
+}
+
+/*Section-Podcastintro*/
+
+#podcastintro {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.gritoindex {
+    max-width: 100%;
+    width: 400rem;
+    display: flex;
+    position: relative;
+    margin: 0 0 auto;
+}
+
+.text__title {
+    position:sticky;
+    font-weight: bold;
+    color: #21a782;
+    font-size: 2rem;
+    font-stretch: semi-expanded;
+}
+
+.text_apoyar {
+    display: block;
+}
+
+.buttonaggro {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #e4a2a7;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: extra-condensed;
+    color: #000;
+}
+
+/*Section-episodes*/
+#episodes {
+    display: flex;
+    height: 500px;
+    background-color: #21a782;
+    position: relative;
+    justify-content: center;
+}
+
+
+.episodes__text {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    color: #e4a2a7;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: bold;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    position: absolute;    
+}
+
+/*.episodes__text h1 {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}*/
+
+
+.episodes__img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.episodes__img img {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.episodes__one {
+    display: flex;
+    padding: 1rem;
+}
+
+.episodes__two {
+    display: flex;
+    padding: 1rem;
+}
+
+.episodes__three {
+    display: flex;
+    padding: 1rem;
+}
+
+#episodes img {
+    background-color: #21a782;
+}
+
+/*footer*/
+
+.footer {
+    z-index: 1;
+    display: flex;
+    height: 100px;
+    background-color: black;
+    opacity: 95%;
+    margin: 0 auto;
+}
+
+.footertext {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: bold;
+    color: #e4a2a7;
+}
+
+.footer p {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
