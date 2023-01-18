@@ -25,6 +25,15 @@ ul {
     margin-right: 2rem;
 }
 
+/*Transformacion del menu*/
+.menu__principal li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu__principal li:hover {
+    transform: scale(1.2);
+}
+
 .logo{
     flex: 0 0 auto;
 }
