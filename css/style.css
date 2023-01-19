@@ -1,5 +1,6 @@
 body {
     background-color: #efe8d5;
+    margin: top;
 }
 
 header {
@@ -40,6 +41,7 @@ ul {
 
 .logoinicio {
     width: 7rem;
+    margin-top: 1rem;
 }
 
 .menu__principal {
@@ -68,7 +70,7 @@ ul {
 
 .gritoindex {
     max-width: 100%;
-    width: 400rem;
+    width: 200rem;
     display: flex;
     position: relative;
     margin: 0 0 auto;
@@ -108,10 +110,10 @@ ul {
 
 .episodes__text {
     width: 300px;
-    margin: 0 auto;
+    margin: 2 auto;
     display: flex;
     color: #e4a2a7;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-stretch: bold;
     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
     position: absolute;    
