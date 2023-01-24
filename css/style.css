@@ -18,13 +18,14 @@ ul {
 }
 
 /*Menu Header*/
+.text-diferent {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #21a782;
+}
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.navbar {
+    background-color: #efe8d5 !important;
 }
 
 /*Transformacion del menu*/
@@ -184,6 +185,34 @@ ul {
 
 
 
+
+/*Grid podcast*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.textgrid {
+    grid-column: 1/ -1;
+    grid-row: inherit;
+    
+    height: 150px;
+    background-color: #e4a2a7;
+}
+
 /*Media Queries index*/
 @media screen and (max-width: 768px) {
         #podcastintro {
@@ -200,4 +229,12 @@ ul {
         .episodes__img {
             flex-flow: column;
         }
+}
+
+/*Grid Podcast - Page*/
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+    grid-template-columns: 1fr 1fr;
+    }
 }
