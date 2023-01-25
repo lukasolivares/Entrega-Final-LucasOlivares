@@ -41,6 +41,11 @@ ul {
 .nav-item:hover {
     transform: scale(1.1);
 }
+
+
+
+
+/*PAGINA INDEX*/
 /*Section-Podcastintro*/
 
 #podcastintro {
@@ -133,35 +138,47 @@ ul {
 #episodes img {
     background-color: #21a782;
 }
+/*FIN DE PAGINA INDEX*/
 
 /*footer*/
-
-.footer {
-    z-index: 1;
-    display: flex;
-    height: 100px;
-    background-color: black;
-    opacity: 95%;
-    margin: 0 auto;
+footer {
+    background-color: rgb(29, 29, 29);
+    color: #21a782;
+    padding: 20px 0;
 }
 
-.footertext {
+.footer__aggro {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-stretch: bold;
-    color: #e4a2a7;
-}
-
-.footer p {
-    width: 50%;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-social a {
+    color:#21a782;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-platforms a {
+    color: #21a782;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    color: #e4a2a7;
+    padding: 10px 0;
+}
 
 
-
+/*PAGINA PODCAST*/
 /*Grid podcast*/
 
 .grid-container {
@@ -171,9 +188,8 @@ ul {
     grid-row-gap: 20px;
     width: 75%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
-
-
 
 .grid-item {
     text-align: center;
@@ -188,9 +204,33 @@ ul {
 .textgrid {
     grid-column: 1/ -1;
     grid-row: inherit;   
-    height: 150px;
+    height: auto;
     background-color: #e4a2a7;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: extra-condensed;
+    text-align: center;
+    border-radius: 10px;
 }
+
+.textgrid h1 {
+    padding: 3px;
+}
+
+
+/*boton dropdown*/
+
+.btn {
+    background-color: #21a782 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.dropdown-menu.show {
+
+}
+
+
+
+
 
 /*Transformacion del menu*/
 .podimg {
@@ -205,6 +245,7 @@ ul {
 }
 
 /*Media Queries index*/
+
 @media screen and (max-width: 768px) {
         #podcastintro {
             flex-direction: column;
@@ -222,10 +263,32 @@ ul {
         }
 }
 
-/*Grid Podcast - Page*/
+/*Grid - podcast*/
 
 @media screen and (max-width: 768px) {
     .grid-container {
     grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*Footer*/
+
+@media screen and (max-width: 768px) {
+    .footer__aggro {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .footer-social {
+        padding: 1 auto;
+    }
+
+    .footer-platforms {
+        padding: 3 auto;
     }
 }
