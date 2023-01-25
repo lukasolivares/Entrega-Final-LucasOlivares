@@ -1,6 +1,6 @@
 body {
     background-color: #efe8d5;
-    margin: top;
+    padding-top: 1rem;
 }
 
 header {
@@ -17,7 +17,7 @@ ul {
     list-style-type: none;
 }
 
-/*Menu Header*/
+/*Menu Header Bootstrap*/
 .text-diferent {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -27,38 +27,20 @@ ul {
     background-color: #efe8d5 !important;
 }
 
+.nav-link {
+    color: #21a782 !important;
+}
+
+
+
 /*Transformacion del menu*/
-.menu__principal li {
+.nav-item {
     transition: transform 0.3s ease-in-out;
 }
 
-.menu__principal li:hover {
-    transform: scale(1.2);
+.nav-item:hover {
+    transform: scale(1.1);
 }
-
-.logo{
-    flex: 0 0 auto;
-}
-
-.logoinicio {
-    width: 7rem;
-    margin-top: 1rem;
-}
-
-.menu__principal {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu li {
-    list-style: none;
-    margin: 0 1em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #21a782;
-}
-
 /*Section-Podcastintro*/
 
 #podcastintro {
@@ -118,11 +100,6 @@ ul {
     margin: 0px auto;
 }
 
-/*.episodes__text h1 {
-    display: flex;
-    justify-items: center;
-    position: absolute;
-}*/
 
 .episodes__img {
     width: 100%;
@@ -192,9 +169,11 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    max-width: 768px;
+    width: 75%;
     margin: 0 auto;
 }
+
+
 
 .grid-item {
     text-align: center;
@@ -202,14 +181,27 @@ ul {
 
 .grid-item img {
     width: 100%;
+    border-radius: 30px;
+    border: solid 5px;
 }
 
 .textgrid {
     grid-column: 1/ -1;
-    grid-row: inherit;
-    
+    grid-row: inherit;   
     height: 150px;
     background-color: #e4a2a7;
+}
+
+/*Transformacion del menu*/
+.podimg {
+    transition: transform 0.5s ease-in-out;
+    filter: grayscale(1);
+}
+
+.podimg:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    
 }
 
 /*Media Queries index*/
