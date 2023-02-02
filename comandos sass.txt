@@ -1,0 +1,4 @@
+1- npm run build-css (para crear un syle.css en caso de que se me joda)
+
+
+npm run watch-css
