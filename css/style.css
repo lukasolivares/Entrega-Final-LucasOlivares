@@ -1,3 +1,4 @@
+/*PALETA DE COLORES*/
 body {
   background-color: #efe8d5;
   padding-top: 1rem; }
@@ -18,7 +19,7 @@ ul {
   font-weight: bold; }
 
 .navbar {
-  background-color: #efe8d5 !important; }
+  background-color: #e4a2a7 !important; }
 
 .nav-link {
   color: #21a782 !important; }
@@ -174,7 +175,6 @@ footer {
   font-stretch: extra-condensed !important;
   text-align: center; }
 
-/*boton dropdown*/
 /*Transformacion del menu*/
 .podimg {
   transition: transform 0.5s ease-in-out;
@@ -183,6 +183,32 @@ footer {
 .podimg:hover {
   transform: scale(1.1);
   filter: grayscale(0); }
+
+/*Pagina Conetindos*/
+.podcast_contenidos {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #21a782; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.podnews {
+  width: calc(1fr / 7);
+  text-align: center;
+  margin-bottom: 20px; }
+
+.img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; }
+
+.title {
+  text-align: center;
+  margin-bottom: 40px; }
 
 /*Media Queries index*/
 @media screen and (max-width: 768px) {
@@ -196,12 +222,12 @@ footer {
   .episodes__img {
     flex-flow: column; } }
 
-/*Grid - podcast*/
+/*Media Queries Grid - podcast*/
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr 1fr; } }
 
-/*Footer*/
+/*Media Queries Footer*/
 @media screen and (max-width: 768px) {
   .footer__aggro {
     flex-direction: column;
