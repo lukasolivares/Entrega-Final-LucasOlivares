@@ -314,7 +314,7 @@ footer {
 
 .banner_apoyanos h1 {
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-stretch: extra-condensed;
   color: #000;
   background-color: #e4a2a7;
